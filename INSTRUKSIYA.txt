@@ -1,0 +1,137 @@
+
+  1-QADAM — TALABLAR
+
+
+  ✔  Python 3.9 yoki undan yuqori
+       → https://www.python.org/downloads/
+        O'rnatishda "Add Python to PATH" katagini belgilang!
+
+  ✔  Google Chrome brauzeri (yangi versiya)
+       → https://www.google.com/chrome/
+
+  ✔  ChromeDriver (Chrome versiyasiga mos)
+       → https://chromedriver.chromium.org/downloads
+       Yuklab oling va SysOne_Mahalla.py bilan bir papkaga qo'ying.
+
+
+
+
+  2-QADAM — KUTUBXONALARNI O'RNATISH
+
+
+  CMD (buyruq satrini) oching va quyidagini kiriting:
+
+      pip install pandas selenium pynput colorama openpyxl
+
+  Hammasi o'rnatilganini tekshirish:
+
+      python -c "import pandas, selenium, pynput, colorama; print('OK')"
+
+  Ekranda "OK" chiqsa — tayyor.
+
+
+
+
+  3-QADAM — EXCEL FAYLNI TAYYORLASH
+
+
+  Fayl nomi:  ro'yhat.xlsx   (aniq shu nom bilan!)
+  Joylashuv:  SysOne_Mahalla.py bilan bir papkada
+
+  Excel ichida quyidagi ustunlar bo'lishi kerak:
+    ┌──────────────────┬──────────────────────────────┐
+    │  Ustun nomi      │  Izoh                        │
+    ├──────────────────┼──────────────────────────────┤
+    │  JSHSHIR         │  14 xonali raqam (majburiy)  │
+    │  F.I.O  yoki FIO │  Ism Familiya (ixtiyoriy)    │
+    └──────────────────┴──────────────────────────────┘
+
+  ⚠  JSHSHIR to'g'ri 14 xona bo'lishi shart!
+  ⚠  Tug'ilgan sana avtomatik JSHSHIR dan hisoblanadi.
+
+
+
+
+  4-QADAM — PAPKA STRUKTURASI
+
+  Barcha fayllar bir papkada bo'lishi kerak:
+
+      📁 SysOne_Mahalla\
+         ├── SysOne_Mahalla.py      ← asosiy dastur
+         └── ro'yhat.xlsx           ← fuqarolar ro'yxati
+
+
+
+
+  5-QADAM — DASTURNI ISHGA TUSHURISH
+
+
+  CMD da papkaga o'ting:
+
+      cd C:\SysOne_Mahalla
+
+  Dasturni ishga tushuring:
+
+      python SysOne_Mahalla.py
+
+  Chrome brauzer avtomatik ochiladi va ishlashni boshlaydi.
+
+
+
+
+  6-QADAM — ISHLASH TARTIBI
+
+
+  Dastur har bir fuqaroni qidiradi va quyidagilardan birini qiladi:
+
+  ✅ FORMA TAYYOR     → Siz forma to'ldirib «Сақлаш» bosasiz
+                        (Bot oyna yopilguncha kutadi)
+
+  ⏭  BOSHQA MFY      → «Davom etish» tugmasini bosadi va o'tadi
+
+  ⏭  TOPILMADI       → Avtomatik o'tib ketadi
+
+  ⏭  MAVJUD          → Avtomatik o'tib ketadi
+
+  ⚠  BOT MA'LUMOTNI O'ZI TO'LDIRMAYDI VA SAQLAMAYDI!
+     Faqat qidiradi — to'ldirish va saqlash SIZNING vazifangiz.
+
+
+
+
+  BOSHQARUV TUGMALARI
+
+
+  F7        →  Pauza / Davom etish
+  Shift+1   →  Tezlikni kamaytirish (sekinlashtirish)
+  Shift+2   →  Tezlikni oshirish
+
+
+
+  NATIJALAR
+
+
+  Dastur tugaganidan so'ng papkada quyidagi fayllar paydo bo'ladi:
+
+      natijalar_hisoboti.xlsx   ← Excel hisobot
+      natijalar_hisoboti.csv    ← CSV hisobot
+
+
+
+  TEZKOR MUAMMOLAR VA YECHIMLAR
+
+
+  ❌  "chromedriver" xatosi
+      → Chrome va ChromeDriver versiyalari mos emasligini tekshiring.
+        chrome://settings/help (Chrome versiyasini ko'rish)
+
+  ❌  "ro'yhat.xlsx topilmadi"
+      → Faylni to'g'ri nomlang va dastur bilan bir papkaga qo'ying.
+
+  ❌  "ModuleNotFoundError"
+      → Qadam-2 dagi pip install buyrug'ini qayta ishga tushiring.
+
+  ❌  "pynput o'rnatilmagan"
+      → Faqat F7/Shift tugmalari ishlamaydi, dastur baribir ishlaydi.
+        Xohlasangiz:  pip install pynput
+
